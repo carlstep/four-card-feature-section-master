@@ -24,7 +24,7 @@ p {
 
 header {
     margin: 50px auto;
-    max-width: 500px;
+    max-width: 450px;
     text-align: center;
 }
 
@@ -33,7 +33,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-    width: 1140px;
+    max-width: 1140px;
 
 }
 
@@ -74,12 +74,17 @@ header {
     background-color: hsl(180, 62%, 55%);
 }
 
+.box-push {
+    transform: translateY(50%);
+}
+
 .box h2 {
     margin: 0;
+    color: hsl(234, 12%, 34%);
+
 }
 
 .box p {
-    font-size: 15px;
     margin: 10px 0 30px;
 }
 
@@ -89,6 +94,7 @@ header {
 
 }
 
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -96,4 +102,10 @@ header {
 
   .attribution a {
     color: hsl(228, 45%, 44%);
+  }
+
+  @media (max-width: 750px) {
+      .box-push {
+          transform: translateY(0);
+      }
   }
