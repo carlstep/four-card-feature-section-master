@@ -8,12 +8,16 @@ body {
 }
 
 h1 {
-    font-weight: 200;
+    font-weight: 600;
     margin: 0;
+    color: hsl(234, 12%, 34%);
 }
 
-h1 span {
-    font-weight: 600;
+h2 {
+    font-weight: 200;
+    font-size: 2rem;
+    color: hsl(234, 12%, 34%);
+    margin: 0;
 }
 
 
@@ -34,7 +38,6 @@ header {
     justify-content: center;
     margin: 0 auto;
     max-width: 1140px;
-
 }
 
 .box {
@@ -48,7 +51,6 @@ header {
 }
 .box::after {
     content: '';
-    background-color: blueviolet;
     position: absolute;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -78,14 +80,16 @@ header {
     transform: translateY(50%);
 }
 
-.box h2 {
+.box h3 {
     margin: 0;
+    font-weight: bold;
     color: hsl(234, 12%, 34%);
 
 }
 
 .box p {
     margin: 10px 0 30px;
+    font-size: 1rem;
 }
 
 .box img {
